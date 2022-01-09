@@ -1,3 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .hidden {
   display: none;
+}
+
+html {
+  background: #333333;
+}
+
+body,
+html,
+img {
+  position: fixed;
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+img {
+  z-index: -1;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+}
+
+#clock {
+  font-size: 150px;
+  margin: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+input {
+  color: snow;
+  width: 300px;
+  font-size: 25px;
+  appearance: none;
+  background: none;
+  border: none;
+  border-bottom: solid 2px snow;
+  margin-top: 20px;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: snow;
+  opacity: 0.6;
+}
+
+#greeting {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+#toDos {
+  font-size: 20px;
+  padding: 0;
+}
+
+#toDos button {
+  background: none;
+  border: none;
+  font-size: 25px;
+}
+
+#toDos button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+#quote {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  font-size: 17px;
+  text-align: center;
+  font-style: italic;
+}
+
+#quote span,
+#weather span {
+  display: block;
+}
+
+#weather {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  text-align: center;
+  color: dimgray;
+  font-style: italic;
+  font-weight: bold;
 }
