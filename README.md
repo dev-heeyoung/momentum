@@ -1,7 +1,7 @@
 # Project title
 momentum
 
-<img width="70%" src="https://user-images.githubusercontent.com/90359267/148703010-2e3a1d7f-d42c-4bf6-8b4b-bf1f450c8a13.gif"/>
+<img src="https://user-images.githubusercontent.com/90359267/148703504-222166d1-1edf-4a0f-8db8-c17dfdff60d0.gif"/>
 
 # Skills
 HTML, CSS, JavaScript
